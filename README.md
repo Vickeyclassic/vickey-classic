@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vickey Classic
 
-## Getting Started
+A personal landing page built with Next.js, React, TypeScript and Tailwind CSS. It presents a short biography, interests, photography and social contact links.
 
-First, run the development server:
+## Stack
+
+- Next.js 16 with the App Router
+- React 19 and TypeScript
+- Tailwind CSS 4
+- React Icons
+
+## Run locally
+
+Use Node.js 20.9 or later.
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Checks and production build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build
+npm start
+```
 
-## Learn More
+## Structure
 
-To learn more about Next.js, take a look at the following resources:
+- `app/page.tsx`: landing page sections and contact links
+- `app/layout.tsx`: shared layout, fonts and metadata
+- `app/globals.css`: global styles
+- `public/`: images and static assets
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Java full stack projects
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+For backend and business application work, see:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Phoenix Gym Business](https://github.com/Vickeyclassic/phoenix-gym-business): gym operations, role-based access, audit logs and reporting.
+- [StockFlow](https://github.com/Vickeyclassic/stockflow): inventory, purchasing and sales workflows.
+- [Phoenix Gym Management](https://github.com/Vickeyclassic/phoenix-gym-management): member management, renewals, attendance and Excel exports.
